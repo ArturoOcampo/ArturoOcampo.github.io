@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,600,700');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    width: 100%;
+    background: #eeeeee;
+    display: flex;
+    justify-content: center
+}
+
+    #subcontainer-header1{
+        width:70px;
+        padding:1em 0em 1em 0em;
+        }
+        #ImgCloud, #LogoHelloWeather{
+            width:100%
+    }
+    #subcontainer-header2{
+        width:300px;
+        text-align: center;
+        padding: 1em 0em 1em 0em;
+    }
+        .motto{
+            font-size:1.1em;
+            font-weight: 600;
+            color: #4B5670;
+    }
+nav{
+    width:100%;
+    background: #4E78D3;
+    text-align: center;
+    color:white;
+
+}
+    ul{
+        padding: 0%;
+    }
+    li{
+        padding: 0.5em;
+    }
+    li:hover{
+        background: #4B5670;
+    }
+        .selected-menu{
+            background: #FB7544;
+            color:white;
+            font-weight: 600;
+        }
+    nav a{
+        text-decoration: none;
+        color:white;
+    }
