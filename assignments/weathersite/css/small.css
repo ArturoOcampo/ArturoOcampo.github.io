@@ -66,8 +66,9 @@ nav{
                     background:rgba(78, 120, 211, 0.8);
                     padding:1em;
                     position: absolute;
-                    margin: 2% 0% 0% 2%;
-                }
+                    margin: 2% 0% 0% 17%;
+
+                 }
                     .cointainer-summary{
                         display: flex;
                     }
@@ -88,14 +89,18 @@ nav{
                     }
                 #ImgPreston{width:100%;} 
                 .img-container{
-                    width:95%;
+                    width:100%;
                     }
+                .img-container-shadow{
+                    width:90%;
+                    box-shadow: -14px 15px 24px -2px rgba(0,0,0,0.33);
+                }
 
                 #section2-preston{
-                    width: 95%;
+                    width: 100%;
                     background: #C1C7D5;
                     margin-top:1em;
-                    margin-top:50px;
+                    margin-top:100px;
                 }
                     #Article-Preston{
                         width:95%;
@@ -124,7 +129,7 @@ nav{
                         
                     }
     footer{
-            width:92%;
+            width:94%;
             background: #4B5670;
             padding:10px;
             color:#fff;
@@ -140,7 +145,7 @@ nav{
                 height: 100%;
                 border:none;}
             #LastBar{
-                width:90%;
+                width:91%;
                 background: #4E78D3;
                 text-align: center;
                 padding:1em;
