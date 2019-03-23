@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300i,400,600,700');
+@media only screen and (max-width: 650px) {
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    width: 100%;
+    background: #eeeeee;
+    display: flex;
+    justify-content: center
+}
+
+    #subcontainer-header1{
+        width:70px;
+        padding:1em 0em 1em 0em;
+        }
+        #ImgCloud, #LogoHelloWeather{
+            width:100%
+    }
+    #subcontainer-header2{
+        width:300px;
+        text-align: center;
+        padding: 1em 0em 1em 0em;
+    }
+        .motto{
+            font-size:1.1em;
+            font-weight: 600;
+            color: #4B5670;
+    }
+    #current-conditions-container{display: none;}
+
+nav{
+    width:100%;
+    background: #4E78D3;
+    text-align: center;
+    color:white;
+
+}
+    ul{
+        padding: 0;
+        margin:0;
+    }
+    li{
+        padding: 0.5em;
+    }
+    li:hover{
+        background: #4B5670;
+    }
+        .selected-menu{
+            background: #FB7544;
+            color:white;
+            font-weight: 600;
+        }
+    nav a{
+        text-decoration: none;
+        color:white;
+    }
+    h1{text-align:center;}
+            #section1-preston{width: 100%;
+                display: flex;
+                }
+                #WeatherSummary{
+                    width:200px;
+                    background:rgba(78, 120, 211, 0.8);
+                    padding:1em;
+                    position: absolute;
+                    margin: 2% 0% 0% 2%;
+                }
+                    .cointainer-summary{
+                        display: flex;
+                    }
+                    .title-summary{
+                        color:#fff;
+                        margin: 0px;
+                        font-weight: 400;
+                        padding: 0px 5px 0px 0px;
+                    }
+                    #Output-Currently, #Output-Temperature, #Output-Humidity, #Output-Precipitation, #Output-WindSpeed{
+                        color:#fff;
+                        font-weight: 800;
+                        margin:0px;
+                    }
+                    h2{
+                        margin:0;
+                        color: #fff;
+                    }
+                #ImgPreston{width:100%;} 
+                .img-container{
+                    width:95%;
+                    }
+
+                #section2-preston{
+                    width: 95%;
+                    background: #C1C7D5;
+                    margin-top:1em;
+                    margin-top:50px;
+                }
+                    #Article-Preston{
+                        width:95%;
+                        padding:10% 5% 5% 5%;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    #small-letter{
+                        font-size:10pt;
+                        margin-bottom: 20px;
+                        order:2;
+                    }
+                    h3{
+                        margin: 0px;
+                        font-size:24pt;
+                        order:1;}
+                    #text{
+                        width:95%;
+                        font-size: 16pt;
+                        order:4;
+                    }
+                    #img-container-article{
+                        width:95%;
+                        padding:0% 2% 5% 8%;
+                        order:3;
+                        
+                    }
+    footer{
+            width:92%;
+            background: #4B5670;
+            padding:10px;
+            color:#fff;
+            margin-top:20px;
+            text-align:center;
+            }
+            #Img-footer{display:none;}
+            #Container-footer{padding:20px;}
+            #Footer-Maps{width:100%;}
+            #map{width:100%;}
+            iframe{
+                width:100%; 
+                height: 100%;
+                border:none;}
+            #LastBar{
+                width:90%;
+                background: #4E78D3;
+                text-align: center;
+                padding:1em;
+            }
+            #SmallText-Footer{
+                color:#fff;
+                font-size: 10pt;
+            }
+            .navigation {
+                list-style: none;
+                text-align: center;
+            }
+            .navigation li:first-child{ display: block;}
+            .navigation li { display: none;}
+            .navigation a {
+                display: block;
+                color:#fff;
+                padding: .75rem;
+                text-align: center;
+                text-decoration: none;
+            }
+            .responsive li { display: block; }
+
+            #WeekDay, #CurrentDate{
+                color:white;
+                padding:20px 0px 20px 0px;
+                font-weight: 700;
+                font-size:16pt;
+            }
+        /* Gallery Page */
+
+            .grid-container {
+                display: grid;
+                grid-gap: 10px;
+                padding: 10px;
+            }
+                          
+            .grid-item {
+                background-color: rgba(231, 231, 231, 0.8);
+                text-align: center;
+                padding: 20px;
+                font-size: 30px;
+            }
+            .item-title {
+                background-color: rgba(255, 255, 255, 0.8);
+              }
+              .container-image{
+                width:100%;
+                height:10em;
+                display:flex;
+                align-items: center;
+                overflow: hidden;
+            }
+            .gallery-Image{
+                width:100%;
+            }
+            .info{
+                text-align:center;
+                font-size:12pt;
+                padding-top:15px;
+            }
+            .text-gallery{
+                font-size:16pt;
+            }
+                    /*StormCenter*/
+
+        #image-form{
+            display: none;
+         }
+         #container-image{
+            display:none;
+         }
+         #container-form{
+             width:275px;
+             border: 1px solid grey;
+             padding:25px;
+             margin: 30px 0px 20px 0px;
+             margin:0 auto;
+         }
+         label{
+             font-size: 14pt;
+             font-weight: 400;
+         }
+         #ratingvalue{
+             text-align: center;
+             font-size: 14pt;
+             margin-bottom: 10px;
+         }
+ 
+         hr{
+             margin: 15px 0px 15px 0px;
+         }
+         .box{
+             width:275px;
+             margin-top:10px;
+             margin-bottom: 10px;
+             height: 25px;
+         }
+ 
+         fieldset{width:245px;}
+         textarea{
+             width:275px;
+             margin-bottom: 25px;
+         }
+         #button-submit{
+             width:275px;
+             height: 30px;
+             background: #F64F59;
+             color:#fff;
+             font-size:14pt;
+             font-weight: 800;
+         }
+
+
+        /*Thanks Page*/
+        
+        #container-thanks{
+            border:1px solid grey;
+            margin:0 auto;
+            width:250px;
+            margin-top: 50px;
+            padding:10px;
+            text-align: center;
+        }
+        #logo-thankspage{
+            width:180px;
+            padding-top:20px;
+        }
+        h4{
+            font-size: 22pt;
+            margin: 0;
+            padding: 20px 0px 5px 0px;
+        }
+        .little-text{
+            font-size: 12pt;
+            color:#F64F59;
+            padding-top:25px;
+        }
+}
