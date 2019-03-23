@@ -128,7 +128,8 @@ body{
                         margin:0;
                         color: #fff;
                     }
-                #ImgPreston{width:100%;}
+                #ImgPreston, #ImgSodaSprings{width:100%;}
+                
                 .img-container-shadow{
                     width:100%;
                     box-shadow: -14px 15px 24px -2px rgba(0,0,0,0.33);
@@ -137,14 +138,14 @@ body{
                     width:100%;
                 }
 
-            #section2-preston{
+            #section2-preston, #section2-SodaSprings{
                 width: 100%;
                 background: #C1C7D5;
                 margin-top:1em;
                 display:flex;
                 
             }
-                #Article-Preston{
+                #Article-Preston, #Article-SodaSprings{
                     width:58%;
                     padding:30px 30px 100px 30px;
                 }
@@ -162,6 +163,12 @@ body{
                     width:23%;
                     padding:2%;
                     margin:1% 0% 0% 62%;
+                    position: absolute;
+                }
+                #img-container-article-SodaSprings{
+                    width:19%;
+                    padding:2%;
+                    margin:1% 0% 0% 64%;
                     position: absolute;
                 }
             
