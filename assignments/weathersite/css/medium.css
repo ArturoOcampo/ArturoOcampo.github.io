@@ -135,6 +135,48 @@ body{
             .img-container{
                 width:100%;
             }
+                    /*Home*/
+                    #Container-Main-home{
+                        width:100%;
+                    }
+                    .img-container-home{width: 100%;}
+        
+                    #section2-home{
+                        width:95%;
+                        background: #fff;
+                        display: flex;
+                        justify-content: center;
+                        padding:30px;
+                        margin-top:0px;
+                    }
+                    .item{
+                        width:28%;
+                        padding: 10px;
+                        font-size: 10pt;
+                        background: #eeeeee;
+                        margin: 0% 1% 0% 1%;
+                        justify-content: center;
+                        text-align: justify;
+                        box-shadow: -14px 22px 13px -6px rgba(0,0,0,0.19);
+                    }
+                    .item:hover{
+                        margin-top:10px;
+                    }
+        
+                    .text-item{
+                        padding-top: 15px;
+                        padding-bottom: 25px;
+                    }
+                    .button-home{
+                        text-align: center;
+                        padding: 5px;
+                        width: 60%;
+                        font-weight: 600;
+                        margin-left: 20%;
+                        margin-bottom: 10%;
+                        background: #4E78D3;
+                        color: white;
+                    }
 
         #section2-preston, #section2-SodaSprings{
             width: 100%;

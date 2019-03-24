@@ -16,18 +16,25 @@ header{
         width:70px;
         padding:1em 0em 1em 0em;
         }
-        #ImgCloud, #LogoHelloWeather{
-            width:100%
+        #ImgCloud{
+            width:85%;
+            margin-left:30%;
     }
+    #LogoHelloWeather{
+        width:85%;
+        margin-right:10%;
+    }
+
     #subcontainer-header2{
         width:300px;
         text-align: center;
         padding: 1em 0em 1em 0em;
     }
         .motto{
-            font-size:1.1em;
+            font-size:1em;
             font-weight: 600;
             color: #4B5670;
+            margin-right:10%;
     }
     #current-conditions-container{display: none;}
 
@@ -94,6 +101,46 @@ nav{
                 .img-container-shadow{
                     width:90%;
                     box-shadow: -14px 15px 24px -2px rgba(0,0,0,0.33);
+                }
+                   /*Home*/
+                   #Container-Main-home{
+                    width:100%;
+                }
+                .img-container-home{width: 100%;}
+    
+                #section2-home{
+                    width:100%;
+                    background: #fff;
+                    padding:5px;
+                    margin-top:0px;
+                }
+                .item{
+                    width:90%;
+                    padding: 10px;
+                    font-size: 10pt;
+                    background: #eeeeee;
+                    margin: 0% 1% 0% 1%;
+                    justify-content: center;
+                    text-align: justify;
+                    box-shadow: -14px 22px 13px -6px rgba(0,0,0,0.19);
+                }
+                .item:hover{
+                    margin-top:10px;
+                }
+    
+                .text-item{
+                    padding-top: 15px;
+                    padding-bottom: 25px;
+                }
+                .button-home{
+                    text-align: center;
+                    padding: 5px;
+                    width: 60%;
+                    font-weight: 600;
+                    margin-left: 20%;
+                    margin-bottom: 10%;
+                    background: #4E78D3;
+                    color: white;
                 }
 
                 #section2-preston, #section2-SodaSprings{

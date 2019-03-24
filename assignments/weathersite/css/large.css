@@ -157,6 +157,7 @@ body{
                 background: #eeeeee;
                 margin: 0% 3% 0% 3%;
                 justify-content: center;
+                font-size: 12pt;
                 text-align: justify;
                 box-shadow: -14px 22px 13px -6px rgba(0,0,0,0.19);
             }
