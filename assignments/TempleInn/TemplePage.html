@@ -25,7 +25,7 @@
                     <li id="menu-icon"><a href="#" title="Menu" onclick="MenuResponsive()">&#9776; Menu</a></li>
                     <div id="hidden">
                     <hr class="horizontal">
-                    <li><a href="">Temple</a></li>
+                    <li><a href="Home.html">Home</a></li>
                     <div class="vertical"></div>
                     <hr class="horizontal">
                     <li><a href="">Reservation</a></li>
@@ -40,82 +40,39 @@
             </nav>
         </header>
         <main>
-            <!--SlideShow-->
-                <div class="slideshow-container">
-
-                        <div class="mySlides fade">
-                            <div class="Slideshow-Container">
-                                <div class="TitleHome">We are near for each occasion</div>
-                                <div class="SlideHome-text">We are close to the temple to help you on your trip, and you could enjoy
-                                the experience completed. We have a reception room, kindergarten,
-                                dressing rooms and much more.</div>
-                                <button>Make Reservation</button>
-                            </div>
-                            <picture>
-                                <source media="(min-width: 769px)" srcset="images/SlideShow-1(1920x667)-Desktop.png">
-                                <source media="(min-width: 426px)" srcset="images/SlideShow-1(768x400)-Tablet.png">
-                                <img src="images/SlideShow-1(360x360)-Phone.png" alt="SlideShow(1)">
-                            </picture>
-                        </div>
-
-                        <div class="mySlides fade">
-                                <div class="Slideshow-Container">
-                                    <div class="TitleHome">We are near for each occasion (2)</div>
-                                    <div class="SlideHome-text">We are close to the temple to help you on your trip, and you could enjoy
-                                    the experience completed. We have a reception room, kindergarten,
-                                    dressing rooms and much more.</div>
-                                    <button>Make Reservation</button>
-                                </div>
-                                <picture>
-                                    <source media="(min-width: 769px)" srcset="images/SlideShow-1(1920x667)-Desktop.png">
-                                    <source media="(min-width: 426px)" srcset="images/SlideShow-1(768x400)-Tablet.png">
-                                    <img src="images/SlideShow-1(360x360)-Phone.png" alt="SlideShow(2)">
-                                </picture>
-                            </div>
-
-                            <div class="mySlides fade">
-                                    <div class="Slideshow-Container">
-                                        <div class="TitleHome">We are near for each occasion (3)</div>
-                                        <div class="SlideHome-text">We are close to the temple to help you on your trip, and you could enjoy
-                                        the experience completed. We have a reception room, kindergarten,
-                                        dressing rooms and much more.</div>
-                                        <button>Make Reservation</button>
-                                    </div>
-                                    <picture>
-                                        <source media="(min-width: 769px)" srcset="images/SlideShow-1(1920x667)-Desktop.png">
-                                        <source media="(min-width: 426px)" srcset="images/SlideShow-1(768x400)-Tablet.png">
-                                        <img src="images/SlideShow-1(360x360)-Phone.png" alt="SlideShow(3)">
-                                    </picture>
-                                </div>
-
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                        </div>
-                        <br>
-
-                        <div id="dots">
-                          <span class="dot" onclick="currentSlide(1)"></span>
-                          <span class="dot" onclick="currentSlide(2)"></span>
-                          <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
-
+            
             <!--Choose the Temple Section-->
 
             <section id="ChooseTemple">
                 <h1 class="tittleSection">Temples</h1>
                 <div id="BoxesContainer">
-                    
+
                     <div class="Temple-box">
-                        <picture class="ImgTemple">
-                            <source media="(min-width: 1025px)" srcset="images/ImgOrangeSection-Home(Desktop).png">
-                            <source media="(min-width: 769px)" srcset="images/ImgOrangeSection-Home(Desktop).png">
-                            <source media="(min-width: 426px)" srcset="images/ImgOrangeSection-Home(Tablet).png">
-                            <img src="images/ImgOrangeSection-Home(Phone).png" alt="About Us">
-                        </picture>
+                        <img src="images/ImgTemple(1)-TemplePage(Desktop).png" alt="Madrid Spain Temple">
                         <h3 id="title">Madrid Spain</h3>
-                        <p id="addressMadrid"></p>
-                        <button>See more</button>
+                        <p id="addressMadrid" class="textBox"></p>
+                        <button type="button" onclick="LinkMadridTemple()">See more</button>
+                    </div>
+
+                    <div class="Temple-box">
+                        <img src="images/ImgTemple(2)-TemplePage(Desktop).png" alt="Mexico City Temple">
+                        <h3 id="title">Mexico City</h3>
+                        <p id="addressMexico" class="textBox"></p>
+                        <button type="button" onclick="LinkMexicoTemple()">See more</button>
+                    </div>
+
+                    <div class="Temple-box">
+                        <img src="images/ImgTemple(3)-TemplePage(Desktop).png" alt="Oakland CA Temple">
+                        <h3 id="title">Oakland CA</h3>
+                        <p id="addressOakland" class="textBox"></p>
+                        <button type="button" onclick="LinkOaklandTemple()">See more</button>
+                    </div>
+
+                    <div class="Temple-box">
+                        <img src="images/ImgTemple(4)-TemplePage(Desktop).png" alt="Sacramento CA Temple">
+                        <h3 id="title">Sacramento CA</h3>
+                        <p id="addressSacramento" class="textBox"></p>
+                        <button type="button" onclick="LinkSacramentoTemple()">See more</button>
                     </div>
                     
                 </div>
@@ -124,19 +81,225 @@
             <!--Orange Section-->
 
             <section class="orange-section">
-                <div class="Col SpaceOrange">
-                    <picture>
-                        <source media="(min-width: 1025px)" srcset="images/ImgOrangeSection-Home(Desktop).png">
-                        <source media="(min-width: 769px)" srcset="images/ImgOrangeSection-Home(Desktop).png">
-                        <source media="(min-width: 426px)" srcset="images/ImgOrangeSection-Home(Tablet).png">
-                        <img src="images/ImgOrangeSection-Home(Phone).png" alt="About Us">
-                    </picture>
+
+            <!--Madrid Schedule-->
+            <div id="Madrid">
+                <a href="#Madrid"></a>
+                <div id="Title-Weather-Container">
+                    <h2 class="tittleSection">Madrid Spain Temple</h2>
+                    <div id="WeatherContainer">
+                        <img id="ImgWeather-Madrid" src="" alt="">
+                        <p id="CurrentWeather-Madrid"></p>
+                    </div>
                 </div>
-                <div class="Col SpaceOrange">
-                    <h2>About us?</h2>
-                    <p class="text-medium">The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.</p>
-                    <button>Contact Us</button>
+                <div id="Container-TempleInfo">
+                    <div class="Col">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="images/SheduleTemple-Madrid(Desktop).png">
+                            <source media="(min-width: 426px)" srcset="images/SheduleTemple-Madrid(Desktop).png">
+                            <img id="ImgScheduleTemples" src="images/SheduleTemple-Madrid(Phone).png" alt="Madrid Spain Temple">
+                        </picture>
+                        <div class="container-temple white">
+                            <p class="title-temple">Select your date:</p>
+                            <div id="ContainerInputs">
+                                <select id="OrdinanceType-Madrid" class="CalendarInput" placeholder="Select Ordinance">
+                                    <option value="Baptism">Baptism</option>
+                                    <option value="Initiatory">Initiatory</option>
+                                    <option value="Endowment">Endowment</option>
+                                    <option value="Sealing">Sealing</option>
+                                </select>
+                                <input class="CalendarInput" id="Date-Madrid" type="date">
+                            </div>
+                            <button type="button" onclick="SearchMadrid()">Search</button>
+                        </div>
+                    </div>
+                    <div class="Col">
+                        <div class="container-temple white">
+                            <div class="row">
+                                <p class="Title-box SpacerHome">Address: </p>
+                                <p id="addressSchedule-Madrid"></p>
+                            </div>
+                            <div class="row">
+                                <p class="Title-box SpacerHome">Telephone: </p>
+                                <p id="telephoneSchedule-Madrid"></p>
+                            </div>
+                            <div class="row">
+                                <p class="Title-box SpacerHome">Services: </p>
+                                <p id="servicesSchedule-Madrid"></p>
+                            </div>
+                        </div>
+                        <div class="container-temple white">
+                            <p class="title-temple" id="OrdinaceMadrid">Schedule</p>
+                            <div id="ScheduleMadrid">Use the <span class="bold">"Select your Date"</span> and find the session<br>for your next visit.</div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <!--Mexico Schedule-->
+            <div id="Mexico">
+                    <a href="#Mexico"></a>
+                    <div id="Title-Weather-Container">
+                        <h2 class="tittleSection">Mexico City Temple</h2>
+                        <div id="WeatherContainer">
+                            <img id="ImgWeather-Mexico" src="" alt="">
+                            <p id="CurrentWeather-Mexico">value</p>
+                        </div>
+                    </div>
+                    <div id="Container-TempleInfo">
+                        <div class="Col">
+                            <picture>
+                                <source media="(min-width: 769px)" srcset="images/SheduleTemple-Mexico(Desktop).png">
+                                <source media="(min-width: 426px)" srcset="images/SheduleTemple-Mexico(Desktop).png">
+                                <img id="ImgScheduleTemples" src="images/SheduleTemple-Mexico(Phone).png" alt="Mexico City Temple">
+                            </picture>
+                            <div class="container-temple white">
+                                <p class="title-temple">Select your date:</p>
+                                <div id="ContainerInputs">
+                                    <select id="OrdinanceType-Mexico" class="CalendarInput" placeholder="Select Ordinance">
+                                        <option value="Baptism">Baptism</option>
+                                        <option value="Initiatory">Initiatory</option>
+                                        <option value="Endowment">Endowment</option>
+                                        <option value="Sealing">Sealing</option>
+                                    </select>
+                                    <input class="CalendarInput" id="Date-Mexico" type="date">
+                                </div>
+                                <button type="button" onclick="SearchMexico()">Search</button>
+                            </div>
+                        </div>
+                        <div class="Col">
+                            <div class="container-temple white">
+                                <div class="row">
+                                    <p class="Title-box SpacerHome">Address: </p>
+                                    <p id="addressSchedule-Mexico"></p>
+                                </div>
+                                <div class="row">
+                                    <p class="Title-box SpacerHome">Telephone: </p>
+                                    <p id="telephoneSchedule-Mexico"></p>
+                                </div>
+                                <div class="row">
+                                    <p class="Title-box SpacerHome">Services: </p>
+                                    <p id="servicesSchedule-Mexico"></p>
+                                </div>
+                            </div>
+                            <div class="container-temple white">
+                                <p class="title-temple" id="OrdinaceMexico">Schedule</p>
+                                <div id="ScheduleMexico">Use the <span class="bold">"Select your Date"</span> and find the session<br>for your next visit.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            <!--Oakland Schedule-->
+            <div id="Oakland">
+                    <a href="#Oakland"></a>
+                    <div id="Title-Weather-Container">
+                        <h2 class="tittleSection">Oakland CA Temple</h2>
+                        <div id="WeatherContainer">
+                            <img id="ImgWeather-Oakland" src="" alt="">
+                            <p id="CurrentWeather-Oakland"></p>
+                        </div>
+                    </div>
+                    <div id="Container-TempleInfo">
+                        <div class="Col">
+                            <picture>
+                                <source media="(min-width: 769px)" srcset="images/SheduleTemple-Oakland(Desktop).png">
+                                <source media="(min-width: 426px)" srcset="images/SheduleTemple-Oakland(Desktop).png">
+                                <img id="ImgScheduleTemples" src="images/SheduleTemple-Oakland(Phone).png" alt="Oakland CA Temple">
+                            </picture>
+                            <div class="container-temple white">
+                                <p class="title-temple">Select your date:</p>
+                                <div id="ContainerInputs">
+                                    <select id="OrdinanceType-Oakland" class="CalendarInput" placeholder="Select Ordinance">
+                                        <option value="Baptism">Baptism</option>
+                                        <option value="Initiatory">Initiatory</option>
+                                        <option value="Endowment">Endowment</option>
+                                        <option value="Sealing">Sealing</option>
+                                    </select>
+                                    <input class="CalendarInput" id="Date-Oakland" type="date">
+                                </div>
+                                <button type="button" onclick="SearchOakland()">Search</button>
+                            </div>
+                        </div>
+                        <div class="Col">
+                            <div class="container-temple white">
+                                <div class="row">
+                                    <p class="Title-box SpacerHome">Address: </p>
+                                    <p id="addressSchedule-Oakland"></p>
+                                </div>
+                                <div class="row">
+                                    <p class="Title-box SpacerHome">Telephone: </p>
+                                    <p id="telephoneSchedule-Oakland"></p>
+                                </div>
+                                <div class="row">
+                                    <p class="Title-box SpacerHome">Services: </p>
+                                    <p id="servicesSchedule-Oakland"></p>
+                                </div>
+                            </div>
+                            <div class="container-temple white">
+                                <p class="title-temple" id="OrdinaceOakland">Schedule</p>
+                                <div id="ScheduleOakland">Use the <span class="bold">"Select your Date"</span> and find the session<br>for your next visit.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            <!--Sacramento Schedule-->
+            <div id="Sacramento">
+                    <a href="#Sacramento"></a>
+                    <div id="Title-Weather-Container">
+                        <h2 class="tittleSection">Sacramento CA Temple</h2>
+                        <div id="WeatherContainer">
+                            <img id="ImgWeather-Sacramento" src="" alt="">
+                            <p id="CurrentWeather-Sacramento"></p>
+                        </div>
+                    </div>
+                    <div id="Container-TempleInfo">
+                        <div class="Col">
+                            <picture>
+                                <source media="(min-width: 769px)" srcset="images/SheduleTemple-Sacramento(Desktop).png">
+                                <source media="(min-width: 426px)" srcset="images/SheduleTemple-Sacramento(Desktop).png">
+                                <img id="ImgScheduleTemples" src="images/SheduleTemple-Sacramento(Phone).png" alt="Sacramento CA Temple">
+                            </picture>
+                            <div class="container-temple white">
+                                <p class="title-temple">Select your date:</p>
+                                <div id="ContainerInputs">
+                                    <select id="OrdinanceType-Sacramento" class="CalendarInput" placeholder="Select Ordinance">
+                                        <option value="Baptism">Baptism</option>
+                                        <option value="Initiatory">Initiatory</option>
+                                        <option value="Endowment">Endowment</option>
+                                        <option value="Sealing">Sealing</option>
+                                    </select>
+                                    <input class="CalendarInput" id="Date-Sacramento" type="date">
+                                </div>
+                                <button type="button" onclick="SearchSacramento()">Search</button>
+                            </div>
+                        </div>
+                        <div class="Col">
+                            <div class="container-temple white">
+                                <div class="row">
+                                    <p class="Title-box SpacerHome">Address: </p>
+                                    <p id="addressSchedule-Sacramento"></p>
+                                </div>
+                                <div class="row">
+                                    <p class="Title-box SpacerHome">Telephone: </p>
+                                    <p id="telephoneSchedule-Sacramento"></p>
+                                </div>
+                                <div class="row">
+                                    <p class="Title-box SpacerHome">Services: </p>
+                                    <p id="servicesSchedule-Sacramento"></p>
+                                </div>
+                            </div>
+                            <div class="container-temple white">
+                                <p class="title-temple" id="OrdinaceSacramento">Schedule</p>
+                                <div id="ScheduleSacramento">Use the <span class="bold">"Select your Date"</span> and find the session<br>for your next visit.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </main>
 
@@ -182,9 +345,19 @@
         </footer>
 
         <!--Scripts-->
-        <script src="js/slideshow.js"></script>
-        <script src="js/DataJSON.js"></script>
-        <script src="js/NextEndowment.js"></script>
+        <script src="js/JSONtemplePage.js"></script>
+        <script src="js/LinksTemplePage.js"></script>
 
+        <script src="js/JSON-Madrid.js"></script>
+        <script src="js/WeatherMadrid.js"></script>
+
+        <script src="js/JSON-Mexico.js"></script>
+        <script src="js/WeatherMexico.js"></script>
+
+        <script src="js/JSON-Oakland.js"></script>
+        <script src="js/WeatherOakland.js"></script>
+
+        <script src="js/JSON-Sacramento.js"></script>
+        <script src="js/WeatherSacramento.js"></script>
     </body>
 </html>

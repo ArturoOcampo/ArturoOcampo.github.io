@@ -22,6 +22,7 @@
         font-size:12pt;
         text-align: center;
     }
+    .bold{font-weight: 800;}
 
     /*HEADER*/
     header{
@@ -32,7 +33,7 @@
         justify-content:center;
     }
     #Principal-Logo{
-        width:50%;
+        width:90%;
         padding: 5px;
 
 
@@ -66,7 +67,7 @@
     li{
         padding: 0px 10px 0px 0px;
         display: inline;
-        font-size: 0.9em;
+        font-size: 16pt;
     }
     #hidden{display:none;}
 
@@ -276,4 +277,117 @@
     .networking{
         width: 80%;
     }
+
+    /*------------Temple Page-------------*/
+
+    #ChooseTemple{
+        width:100%;
+        padding: 2% 10% 5% 10%;
+    }
+    .tittleSection{
+        font-weight: 800;
+        font-size: 20pt;
+        text-align: center;
+        margin-top:5%;   
+    }
+    #BoxesContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .Temple-box{
+        width:100%;
+        margin: 0% 3% 15% 3%;
+        background: #F7F4EA;
+        box-shadow: -5px 10px 5px 2px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .Temple-box button{
+        margin-bottom:20%;
+        width: 80%;
+    }
+    .textBox{
+        padding: 0% 10% 10% 10%;
+        height: 80px;
+    }
+    
+        /*Temples Schedule*/
+
+        #Madrid{display:none;}
+        #Mexico{display:none;}
+        #Oakland{display:none;}
+        #Sacramento{display:none;}
+
+        #Title-Weather-Container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #WeatherContainer{
+            width: 180px;
+            display:flex;
+            margin-left:0%;
+        }
+        #ImgWeather-Madrid, #ImgWeather-Mexico, #ImgWeather-Oakland, #ImgWeather-Sacramento{
+            width: 40%;
+        }
+        #Container-TempleInfo{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #ImgScheduleTemples{
+            padding: 4% 4% 0% 0%;
+        }
+        #ContainerInputs{
+            width:100%;
+            display:flex;
+            justify-content: center;
+        }
+        .CalendarInput{
+            width:100%;
+            height: 35px;
+            margin: 0% 2% 5% 2%;
+            border:1px solid black;
+            text-align: center;
+            font-size: 10pt;
+            background: white;
+        }
+        #ScheduleMadrid,  #ScheduleMexico, #ScheduleOakland, #ScheduleSacramento{
+            width: 100%;
+            height: 180px;
+            border:1px solid grey;
+            padding: 5%;
+            overflow: auto;
+            line-height: 20pt;
+        }
+        .container-temple button{
+            margin-left:0%;
+            padding: 3% 15% 3% 15%;
+            position: relative;
+            float: right;
+            margin: 1%;
+        }
+        .container-temple .title-temple{
+            margin-left:0%;
+        }
+        .white{
+            background:white;
+        }
+        .title-temple{
+            font-size: 14pt;
+            font-weight: 800;
+        }
+        .container-temple{
+            width:100%;
+
+        }
+        #CurrentWeather-Madrid, #CurrentWeather-Mexico,  #CurrentWeather-Oakland, #CurrentWeather-Sacramento{
+            margin-left:15px;
+            font-size:16pt;
+            font-weight: 800;
+        }
+    
 }
