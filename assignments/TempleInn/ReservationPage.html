@@ -42,7 +42,92 @@
         <main>
             <!--Reservation Page-->
             <section id="ContainerReservation">
-                
+                <div id="ContainerForm">
+                    <div class="Col-Image">
+                            <p class="Title-ReservationPage">Make your<br>Reservation</p>
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="images/ImgReservationPage(Desktop).png">
+                            <source media="(min-width: 426px)" srcset="images/ImgReservationPage(Tablet).png">
+                            <img src="images/ImgReservationPage(Tablet).png" alt="SlideShow(3)">
+                        </picture>
+                    </div>
+                    <div class="Col-Form">
+                        <form id="MakeReservation" action="">
+
+                            <!--Step 1-->
+                            <div id="Step1Container">
+                                <p class="TitleForm">Your information</p>
+                                <p class="TextForm">Please fill the boxes with your personal information.</p>
+                                <div class="feedBack" id="checkStep1"></div>
+                                <div class="inputContainer">
+                                    <input class="inputStyles-col" id="Name" type="text" placeholder="Name*">
+                                    <input class="inputStyles" id="LastName" type="text" placeholder="Last Name*">
+                                </div>
+                                <div class="inputContainer">
+                                    <input class="inputStyles-col" id="Phone" type="tel" placeholder="Phone*">
+                                    <input class="inputStyles" id="Country" type="text" placeholder="Country / State*">
+                                </div>
+                                <input class="inputStyles" id="Email" type="email" placeholder="Email*">
+                                <div class="ButtonContainer">
+                                    <p class="SmallTitle">*Obligatory Box</p>
+                                    <button type="button" onclick="NextStep1()">Next</button>
+                                </div>
+                            </div>
+
+                            <!--Step 2-->
+                            <div id="Step2Container">
+                                <p class="TitleForm">Your reservation</p>
+                                <p class="TextForm">Please fill the boxes with the service that you want.</p>
+                                <div class="feedBack" id="checkStep2"></div>
+                                <select id="Hotel" name="hotel" >
+                                    <option value="Invalid">Select the hotel*</option>
+                                    <option value="Madrid">Madrid Spain</option>
+                                    <option value="Mexico">Mexico City</option>
+                                    <option value="Oakland">Oakland</option>
+                                    <option value="Sacramento">Sacramento</option>
+                                </select>
+                                <select id="Service" name="service" >
+                                        <option value="Invalid">Select type of room / Service*</option>
+                                        <option value="Room1">Room for 1 person</option>
+                                        <option value="Room2">Room for 2 persons</option>
+                                        <option value="Room3">Room for 4 persons</option>
+                                        <option value="FamilyRoom">Family room (6+)</option>
+                                        <option value="MissionarySuite">Missionary Suites</option>
+                                        <option value="Reception">Reception</option>
+                                        <option value="kindergarten">kindergarten</option>
+                                </select>
+                                <div id="ContainerDate">
+                                    <div class="TextContainer">
+                                        <p class="TextForm-small">Arrival date</p>
+                                        <p class="TextForm-small">Departure date</p>
+                                    </div>
+                                    <div class="inputContainer-date">
+                                        <input id="Arrival" type="date">
+                                        <input id="Departure" type="date">
+                                    </div>
+                                </div>
+                                <div class="ButtonContainer">
+                                    <p class="SmallTitle">*Obligatory Box</p>
+                                    <button class="back" type="button" onclick="BackStep1()">Back</button>
+                                    <button type="button" onclick="NextStep2()">Next</button>
+                                </div>
+                            </div>
+
+                            <!--Step 3-->
+                            <div id="Step3Container">
+                                <p class="TitleForm">Your comments</p>
+                                <p class="TextForm">Please let us know if you need anything else.</p>
+                                <div class="feedBack" id="checkStep3"></div>
+                                <textarea rows="5" cols="50" placeholder="Write your comments (Optional)"></textarea>
+                                <div class="ButtonContainer">
+                                    <p class="SmallTitle">*Obligatory Box</p>
+                                    <button class="back" type="button" onclick="BackStep2()">Back</button>
+                                    <input class="Button" type="submit" value="Submit" onclick="ThankyouPage()">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -88,9 +173,7 @@
         </footer>
 
         <!--Scripts-->
-        <script src="js/slideshow.js"></script>
-        <script src="js/DataJSON.js"></script>
-        <script src="js/NextEndowment.js"></script>
-
+        <script src="js/MultipleStepForm.js"></script>
+        <script src="js/FormSteps.js"></script>
     </body>
 </html>
