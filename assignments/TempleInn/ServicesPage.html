@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
     <head>
-            <title>Temple Inn & Suites - Home</title>
+            <title>Temple Inn & Suites - Services</title>
             <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
             <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.">
@@ -25,13 +25,13 @@
                     <li id="menu-icon"><a href="#" title="Menu" onclick="MenuResponsive()">&#9776; Menu</a></li>
                     <div id="hidden">
                     <hr class="horizontal">
-                    <li><a href="TemplePage.html">Temple</a></li>
+                    <li><a href="Home.html">Home</a></li>
+                    <div class="vertical"></div>
+                    <hr class="horizontal">
+                    <li><a href="TemplePage.html">Temples</a></li>
                     <div class="vertical"></div>
                     <hr class="horizontal">
                     <li><a href="ReservationPage.html">Reservation</a></li>
-                    <div class="vertical"></div>
-                    <hr class="horizontal">
-                    <li><a href="ServicesPage.html">Services</a></li>
                     <div class="vertical"></div>
                     <hr class="horizontal">
                     <li><a href="">Contact</a></li>
@@ -45,11 +45,8 @@
 
                         <div class="mySlides fade">
                             <div class="Slideshow-Container">
-                                <div class="TitleHome">We are near for each occasion</div>
-                                <div class="SlideHome-text">We are close to the temple to help you on your trip, and you could enjoy
-                                the experience completed. We have a reception room, kindergarten,
-                                dressing rooms and much more.</div>
-                                <button>Make Reservation</button>
+                                <div class="TitleHome">WiFi high-speed internet access and smart TVs</div>
+                                <div class="SlideHome-text">Enjoy this free service in all our rooms and public rooms, like lobby, game room and much more.</div>
                             </div>
                             <picture>
                                 <source media="(min-width: 769px)" srcset="images/SlideShow-1(1920x667)-Desktop.png">
@@ -60,11 +57,8 @@
 
                         <div class="mySlides fade">
                                 <div class="Slideshow-Container">
-                                    <div class="TitleHome">We are near for each occasion (2)</div>
-                                    <div class="SlideHome-text">We are close to the temple to help you on your trip, and you could enjoy
-                                    the experience completed. We have a reception room, kindergarten,
-                                    dressing rooms and much more.</div>
-                                    <button>Make Reservation</button>
+                                    <div class="TitleHome">Breakfast, Excercise / Workout room and Indoor Pool</div>
+                                    <div class="SlideHome-text">We have all for your visit, enjoy all this services for free.</div>
                                 </div>
                                 <picture>
                                     <source media="(min-width: 769px)" srcset="images/SlideShow-1(1920x667)-Desktop.png">
@@ -75,11 +69,8 @@
 
                             <div class="mySlides fade">
                                     <div class="Slideshow-Container">
-                                        <div class="TitleHome">We are near for each occasion (3)</div>
-                                        <div class="SlideHome-text">We are close to the temple to help you on your trip, and you could enjoy
-                                        the experience completed. We have a reception room, kindergarten,
-                                        dressing rooms and much more.</div>
-                                        <button>Make Reservation</button>
+                                        <div class="TitleHome">Family History Consultation, Parking & Temple shuttle</div>
+                                        <div class="SlideHome-text">We have our Family history Consultation and more services for free, come in and enjoy it.</div>
                                     </div>
                                     <picture>
                                         <source media="(min-width: 769px)" srcset="images/SlideShow-1(1920x667)-Desktop.png">
@@ -87,10 +78,6 @@
                                         <img src="images/SlideShow-1(360x360)-Phone.png" alt="SlideShow(3)">
                                     </picture>
                                 </div>
-
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
                         </div>
                         <br>
 
@@ -100,56 +87,59 @@
                           <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
 
-            <!--Temple Section-->
+            <!--Specialized Services-->
 
-            <section id="TempleSection">
-                <div class="Col">
-                    <h1>Mexico City Temple</h1>
-                    <p class="centered">Know more about your temple, times, dates, sessions and much more.</p>
-                    <div class="container-temple">
-                        <div class="row">
-                            <p class="Title-box SpacerHome">Address: </p>
-                            <p id="address"></p>
+            <section id="ChooseTemple">
+                    <h1 class="tittleSection">Specialized Services</h1>
+                    <div id="BoxesContainer">
+    
+                        <div class="Service-box">
+                            <img src="images/ImgTemple(1)-TemplePage(Desktop).png" alt="Madrid Spain Temple">
+                            <h4 id="title">Wedding Reception</h4>
+                            <p class="textBox serviceText">A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</p>
+                            <button class="ServiceButton" type="button" onclick="WeddingReceptionLink()">See more</button>
                         </div>
-                        <div class="row">
-                            <p class="Title-box SpacerHome">Telephone: </p>
-                            <p id="telephone"></p>
-                        </div>
-                        <div class="row">
-                            <p class="Title-box SpacerHome">Services: </p>
-                            <p id="services"></p>
+    
+                        <div class="Service-box">
+                            <img src="images/ImgTemple(2)-TemplePage(Desktop).png" alt="Mexico City Temple">
+                            <h4 id="title">Suites for full-time<br>temple missionaries</h4>
+                            <p class="textBox serviceText2">Long-term stay accommodations, suites with kitchen for full-time temple missionaries</p>
+                            <button class="ServiceButton" type="button" onclick="SuitesLink()">See more</button>
                         </div>
                     </div>
-                    <div class="container-temple">
-                        <p class="Title-box">Next Endowment Session: <span id="NextSesion"></span></p>
-                    </div>
-                    <button>Choose your temple</button>
-                </div>
-                <div class="Col" id="ImgTemple-Home">
-                    <picture>
-                        <source media="(min-width: 1025px)" srcset="images/ImgTemple-Home(Desktop-large).png">
-                        <source media="(min-width: 769px)" srcset="images/ImgTemple-Home(Desktop).png">
-                        <source media="(min-width: 426px)" srcset="images/ImgTemple-Home(Tablet).png">
-                        <img src="images/ImgTemple-Home(Phone).png" alt="Mexico Temple">
-                    </picture>
-                </div>
-            </section>
+                </section>
 
             <!--Orange Section-->
-
-            <section class="orange-section">
-                <div class="Col SpaceOrange">
-                    <picture>
-                        <source media="(min-width: 1025px)" srcset="images/ImgOrangeSection-Home(Desktop).png">
-                        <source media="(min-width: 769px)" srcset="images/ImgOrangeSection-Home(Desktop).png">
-                        <source media="(min-width: 426px)" srcset="images/ImgOrangeSection-Home(Tablet).png">
-                        <img src="images/ImgOrangeSection-Home(Phone).png" alt="About Us">
-                    </picture>
+            <div class="ContainerTitles">
+                <h3 class="tittleSection-Services">More Services</h2>
+            </div>
+            <section class="orange-section-service">
+                <div class="serviceContainer">
+                    <div class="Col-image SpaceOrange">
+                        <img src="images/ImgService(1)-(Desktop).png" alt="About Us">
+                    </div>
+                    <div class="Col-center SpaceOrange">
+                        <h3 class="tittleServices">playroom & babysitting</h3>
+                        <p class="text-medium">Low-Cost, short-term babysitting services for the children of patrons.</p>
+                    </div>
                 </div>
-                <div class="Col SpaceOrange">
-                    <h2>About us?</h2>
-                    <p class="text-medium">The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world.</p>
-                    <button>Contact Us</button>
+                <div class="serviceContainer-2">
+                    <div class="Col-image SpaceOrange">
+                        <img src="images/ImgService(1)-(Desktop).png" alt="About Us">
+                    </div>
+                    <div class="Col-center SpaceOrange">
+                        <h3 class="tittleServices">Rooms & bathroom</h3>
+                        <p class="text-medium">Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes.</p>
+                    </div>
+                </div>
+                <div class="serviceContainer">
+                    <div class="Col-image SpaceOrange">
+                        <img src="images/ImgService(1)-(Desktop).png" alt="About Us">
+                    </div>
+                    <div class="Col-center SpaceOrange">
+                        <h3 class="tittleServices">Family Search Center</h3>
+                        <p class="text-medium">A family search center that supports family search and ordinance work.</p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -196,7 +186,7 @@
         </footer>
 
         <!--Scripts-->
-        <script src="js/slideshow.js"></script>
+        <script src="js/slideshow-Automatic.js"></script>
         <script src="js/DataJSON.js"></script>
         <script src="js/NextEndowment.js"></script>
 

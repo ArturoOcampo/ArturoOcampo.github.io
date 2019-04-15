@@ -31,6 +31,10 @@
         font-size:25pt;
         margin-bottom: 10px;
     }
+    h3{
+        margin:0%;
+        padding: 0%;
+    }
     .text-medium{
         font-size:12pt;
     }
@@ -282,10 +286,10 @@
     }
     .tittleSection{
         font-weight: 800;
-        font-size: 26pt;
+        font-size: 20pt;
         text-align: center;
-        margin-top:0%;
-
+        margin-top:5%;
+        margin-bottom: 5%;
     }
     #BoxesContainer{
         width: 100%;
@@ -514,5 +518,76 @@
     #ContainerDate{
         display: flex;
     }
+    /*---------Service Page-----------*/
 
+    .serviceText{
+        margin-bottom:10%;
+        height:100px;
+    }
+    .serviceText2{
+        margin-bottom:4%;
+        height: 100px;
+    }
+    .Service-box{
+        width:35%;
+        margin: 0% 3% 0% 3%;
+        background: #F7F4EA;
+        box-shadow: -5px 10px 5px 2px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .ServiceButton{
+        margin-bottom: 10%;
+    }
+    .tittleServices{
+        font-size: 18pt;
+        font-weight: 800;
+    }
+    .ContainerTitles{
+        width: 100%;
+        padding-top:2%;
+        padding-bottom: 2%;
+        background: #FFCDB2;
+    }
+    .Col-center{
+        width:50%;
+        display: flex;
+        flex-wrap:wrap;
+        align-content: center;
+    }
+    .Col-image{
+        width:50%;
+        padding:0%;
+        margin:0%;
+    
+    }
+    .orange-section-service{
+        width:100%;
+        padding: 3%;
+        background: #FFCDB2;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .Service-box{
+        margin-left: 0%;
+        margin-bottom: 15%;
+    }
+    .serviceContainer{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .serviceContainer-2{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+    .tittleSection-Services{
+        font-weight: 800;
+        font-size: 20pt;
+        text-align: center;
+        margin-top:5%;
+        margin-bottom: 1%;
+    }
 }
