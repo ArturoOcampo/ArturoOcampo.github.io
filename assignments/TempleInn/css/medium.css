@@ -35,6 +35,9 @@
         margin:0%;
         padding: 0%;
     }
+    h5{
+        font-size: 14pt;
+    }
     .text-medium{
         font-size:12pt;
     }
@@ -537,6 +540,8 @@
     }
     .ServiceButton{
         margin-bottom: 10%;
+        padding: 3% 20% 3% 20%;
+        font-size: 12pt;
     }
     .tittleServices{
         font-size: 18pt;
@@ -589,5 +594,72 @@
         text-align: center;
         margin-top:5%;
         margin-bottom: 1%;
+    }
+        /*-------------Contact Page-------------*/
+
+        .contactForm{
+            margin-top: 5%;
+            height:120px;
+        }
+        .TitleContact{
+            font-size:20pt;
+            margin-bottom:5%;
+            margin-top: 13%;
+        }
+        .ContainerContact{
+            width:100%;
+            background: #EBEBEB;
+            padding:5% 10% 5% 10%;
+            display:flex;
+            justify-content: center;
+        }
+        #MapSection{
+            width: 80%;
+            display: flex;
+        }
+        .Col-Map{
+            width: 50%;
+        }
+        iframe{
+            width: 120%;
+            height: 250px;
+            border: 2px solid grey;
+        }
+        .text{
+            padding-right: 10%;
+            font-size: 14pt;
+        }
+        hr{
+            width:80%;
+            margin-top: 0%;
+            background: #EBEBEB
+        }
+        .text-Copy{
+            text-align: center;
+            font-size: 14pt;
+            margin: 0%;
+            padding: 1% 0% 4% 1%;
+        }
+        #ContainerCopy{
+            background: #EBEBEB;
+        }
+   /*----------------Thank You Page------------------*/
+   .TitleThankYou{
+        text-align: center;
+        font-size:26pt;
+        font-weight: 800;
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+    .aligncenter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10%;
+        text-align: center;
+    }
+    .Icon{
+        width:15%;
     }
 }
